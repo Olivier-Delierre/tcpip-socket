@@ -1,0 +1,35 @@
+========================
+@author Olivier Delierre
+@version 1.0
+========================
+
+tcpCHAT
+
+===========================================================
+NOTE : Ce programme ne fonctionne que sur un système UNIX !
+===========================================================
+
+===============
+I. Installation
+===============
+Il suffit de lancer les commandes suivantes à la racine du dossier :
+$ make
+$ make clean
+
+===============
+II. Utilisation
+===============
+Il faut tout d'abord lancer le serveur avec la commande suivante :
+$ ./server.out <Numéro du port>
+
+Ensuite, vous pouvez lancer les clients via la commande :
+$ ./client.out
+Vous devez ensuite choisir le port auquel se connecter, puis, si
+le serveur est lancé sur ce port, la connexion s'établira.
+
+================
+III. Suppression
+================
+Pour supprimer les exécutables, ainsi que les fichiers de linkage,
+vous pouvez utiliser la commande suivante :
+$ make mrproper
